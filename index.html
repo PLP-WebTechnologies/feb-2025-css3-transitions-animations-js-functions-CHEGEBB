@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Amazing Travel Destinations</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active" data-filter="all">All Destinations</a></li>
+                <li><a href="#" data-filter="beach">Beaches</a></li>
+                <li><a href="#" data-filter="mountain">Mountains</a></li>
+                <li><a href="#" data-filter="city">Cities</a></li>
+                <li><a href="#" data-filter="cultural">Cultural</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search destinations...">
+                <button id="search-button">🔍</button>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-button">Toggle Dark Mode</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="featured-destination">
+            <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=800&h=400&auto=format&fit=crop" alt="Featured destination">
+            <div class="featured-content">
+                <h2>Discover Your Next Adventure</h2>
+                <p>Explore breathtaking destinations from around the world</p>
+                <button class="cta-button">Start Exploring</button>
+            </div>
+        </div>
+
+        <h2 class="section-title">Popular Destinations</h2>
+        
+        <div class="card-container">
+            <div class="card" data-category="beach">
+                <div class="card-badge">Popular</div>
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&auto=format&fit=crop" alt="Beach destination">
+                <div class="card-content">
+                    <h2>Tropical Paradise</h2>
+                    <p>Explore beautiful beaches and crystal clear waters.</p>
+                    <div class="card-meta">
+                        <span class="rating">★★★★★</span>
+                        <button class="like-button">❤ Like</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-category="mountain">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&h=300&auto=format&fit=crop" alt="Mountain view">
+                <div class="card-content">
+                    <h2>Mountain Retreat</h2>
+                    <p>Discover breathtaking views and hiking trails.</p>
+                    <div class="card-meta">
+                        <span class="rating">★★★★☆</span>
+                        <button class="like-button">❤ Like</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-category="city">
+                <div class="card-badge">New</div>
+                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=300&auto=format&fit=crop" alt="City skyline">
+                <div class="card-content">
+                    <h2>Urban Adventure</h2>
+                    <p>Experience the vibrant culture of city life.</p>
+                    <div class="card-meta">
+                        <span class="rating">★★★★☆</span>
+                        <button class="like-button">❤ Like</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" data-category="cultural">
+                <img src="https://images.unsplash.com/photo-1606687963945-e342485fec18?w=400&h=300&auto=format&fit=crop" alt="Temple in Asia">
+                <div class="card-content">
+                    <h2>Ancient Temples</h2>
+                    <p>Explore historical sites and cultural wonders.</p>
+                    <div class="card-meta">
+                        <span class="rating">★★★★★</span>
+                        <button class="like-button">❤ Like</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" data-category="beach">
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=400&h=300&auto=format&fit=crop" alt="Island paradise">
+                <div class="card-content">
+                    <h2>Island Paradise</h2>
+                    <p>Relax on pristine beaches and enjoy local cuisine.</p>
+                    <div class="card-meta">
+                        <span class="rating">★★★★☆</span>
+                        <button class="like-button">❤ Like</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" data-category="city">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&h=300&auto=format&fit=crop" alt="City at night">
+                <div class="card-content">
+                    <h2>City Nights</h2>
+                    <p>Experience vibrant nightlife and city lights.</p>
+                    <div class="card-meta">
+                        <span class="rating">★★★★☆</span>
+                        <button class="like-button">❤ Like</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" data-category="mountain">
+                <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=400&h=300&auto=format&fit=crop" alt="Snowy mountain">
+                <div class="card-content">
+                    <h2>Winter Wonderland</h2>
+                    <p>Ski, snowboard, and enjoy winter activities.</p>
+                    <div class="card-meta">
+                        <span class="rating">★★★★★</span>
+                        <button class="like-button">❤ Like</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" data-category="cultural">
+                <img src="https://images.unsplash.com/photo-1547448415-e9f5b28e570d?w=400&h=300&auto=format&fit=crop" alt="Cultural festival">
+                <div class="card-content">
+                    <h2>Vibrant Festivals</h2>
+                    <p>Experience colorful cultural celebrations worldwide.</p>
+                    <div class="card-meta">
+                        <span class="rating">★★★★★</span>
+                        <button class="like-button">❤ Like</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest travel deals and destination ideas straight to your inbox!</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We help travelers discover amazing destinations worldwide.</p>
+                <button id="show-about" class="footer-button">Learn More</button>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Popular Destinations</a></li>
+                    <li><a href="#">Travel Guides</a></li>
+                    <li><a href="#">Travel Tips</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">📱</a>
+                    <a href="#" class="social-icon">📸</a>
+                    <a href="#" class="social-icon">🐦</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Travel Destinations | <span id="liked-count">0 destinations liked</span></p>
+        </div>
+        
+        <!-- Modal -->
+        <div id="about-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>About Travel Destinations</h2>
+                <p>Travel Destinations is your gateway to discovering the world's most beautiful places. We curate the best locations from every corner of the globe to inspire your next adventure.</p>
+                <p>Our team of travel enthusiasts is dedicated to providing you with detailed information, breathtaking images, and practical tips to make your travel planning easier.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
